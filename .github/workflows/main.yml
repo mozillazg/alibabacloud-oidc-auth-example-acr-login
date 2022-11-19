@@ -21,6 +21,7 @@ jobs:
           oidc-provider-arn: '${{ secrets.OIDC_ARN }}'
           set-outputs: 'true'
 
+      # https://github.com/mozillazg/acr-login/tree/support-sts-token-update-dst
       - uses: mozillazg/acr-login@008d514b0783ea9c0e889a27cf2e051710de1538
         with:
           region-id: ap-southeast-1
